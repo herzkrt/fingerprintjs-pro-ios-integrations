@@ -174,7 +174,7 @@
 
         private lazy var messageHandlerName: String = {
             UUID().uuidString
-                .components(separatedBy: .letters.inverted)
+                .components(separatedBy: CharacterSet.letters.inverted)
                 .joined()
         }()
 
